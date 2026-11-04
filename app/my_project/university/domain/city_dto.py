@@ -1,7 +1,3 @@
-class CityDTO:
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
+from .models import City
 
-    def to_dict(self):
-        return {"id": self.id, "name": self.name}
+CityDTO = City
